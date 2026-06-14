@@ -52,7 +52,7 @@
 
     <header>
         <img src="logo.png" alt="Tech.Chebur.Shop" class="logo">
-        <p id="subtitle">Мониторинг и Безопасность</p>
+        <p id="subtitle">Мониторинг и технические системы</p>
     </header>
 
     <div class="project-card">
@@ -65,6 +65,13 @@
         <h2 id="arch-title">Технический Архив</h2>
         <p id="arch-desc">Логи, конфигурации и документация проектов.</p>
         <a href="/archive" id="arch-link">Открыть архив</a>
+    </div>
+
+    <div class="project-card">
+        <h2 id="contact-title">Контакты</h2>
+        <p id="contact-desc">Свяжитесь со мной через WhatsApp или электронную почту:</p>
+        <p>WhatsApp: <a href="https://wa.me/49017661566343">+49 0176 61566343</a></p>
+        <p>Email: <a href="mailto:tech.chebur@gmail.com">tech.chebur@gmail.com</a></p>
     </div>
 
     <footer>
@@ -80,7 +87,9 @@
                 gpsLink: "Перейти к панели управления",
                 archTitle: "Технический Архив",
                 archDesc: "Логи, конфигурации и документация проектов.",
-                archLink: "Открыть архив"
+                archLink: "Открыть архив",
+                contactTitle: "Контакты",
+                contactDesc: "Свяжитесь со мной через WhatsApp или электронную почту:"
             },
             de: {
                 subtitle: "Überwachung und technische Systeme",
@@ -89,7 +98,9 @@
                 gpsLink: "Zum Kontrollpanel",
                 archTitle: "Technisches Archiv",
                 archDesc: "Protokolle, Konfigurationen und Projektdokumentation.",
-                archLink: "Archiv öffnen"
+                archLink: "Archiv öffnen",
+                contactTitle: "Kontakt",
+                contactDesc: "Kontaktieren Sie mich per WhatsApp oder E-Mail:"
             }
         };
 
@@ -101,6 +112,8 @@
             document.getElementById('arch-title').innerText = content[lang].archTitle;
             document.getElementById('arch-desc').innerText = content[lang].archDesc;
             document.getElementById('arch-link').innerText = content[lang].archLink;
+            document.getElementById('contact-title').innerText = content[lang].contactTitle;
+            document.getElementById('contact-desc').innerText = content[lang].contactDesc;
         }
     </script>
 </body>
