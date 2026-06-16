@@ -78,8 +78,11 @@
     <div class="project-card">
         <h2 id="contact-title">Контакты</h2>
         <p id="contact-desc">Свяжитесь со мной через WhatsApp или электронную почту:</p>
-        <p>WhatsApp: <a href="https://wa.me/49017661566343">+49 0176 61566343</a></p>
-        <p>Email: <a href="mailto:tech.chebur@gmail.com">tech.chebur@gmail.com</a></p>
+        
+        <div style="display: flex; gap: 10px; margin-top: 15px;">
+            <a href="https://wa.me/49017661566343" id="contact-wa-btn" style="background: #00ffff; color: #000; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold;">WhatsApp</a>
+            <a href="mailto:tech.chebur@gmail.com" id="contact-mail-btn" style="border: 1px solid #00ffff; color: #00ffff; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold;">Email</a>
+        </div>
     </div>
 
     <footer>
@@ -99,7 +102,9 @@
                 archSosBtn: "SOS-ID",
                 archLinkBtn: "Открыть архив",
                 contactTitle: "Контакты",
-                contactDesc: "Свяжитесь со мной через WhatsApp или электронную почту:"
+                contactDesc: "Свяжитесь со мной через WhatsApp или электронную почту:",
+                contactWaBtn: "WhatsApp",
+                contactMailBtn: "Email"
             },
             de: {
                 subtitle: "Überwachung und technische Systeme",
@@ -112,7 +117,9 @@
                 archSosBtn: "SOS-ID",
                 archLinkBtn: "Archiv öffnen",
                 contactTitle: "Kontakt",
-                contactDesc: "Kontaktieren Sie mich per WhatsApp oder E-Mail:"
+                contactDesc: "Kontaktieren Sie mich per WhatsApp oder E-Mail:",
+                contactWaBtn: "WhatsApp",
+                contactMailBtn: "E-Mail"
             }
         };
 
@@ -132,6 +139,8 @@
             document.getElementById('arch-link-btn').innerText = content[lang].archLinkBtn;
             document.getElementById('contact-title').innerText = content[lang].contactTitle;
             document.getElementById('contact-desc').innerText = content[lang].contactDesc;
+            document.getElementById('contact-wa-btn').innerText = content[lang].contactWaBtn;
+            document.getElementById('contact-mail-btn').innerText = content[lang].contactMailBtn;
         }
     </script>
 </body>
